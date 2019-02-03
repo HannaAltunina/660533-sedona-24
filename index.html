@@ -19,24 +19,26 @@
       </nav>
     </header>
     <main>
-        <h1 class="visually-hidden">Седона</h1>
       <section class="promo">
-
+        <img src="img/background-photo.jpg" width="1200" height="800" alt="Вид на красные скалы Седоны">
+        <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в великолепный город Седона">
+        <!-- mask -->
         <p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
 </section>
       <section class="features">
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h1 class="visually-hidden">Седона</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <h2 class="visually-hidden">Достопримечательности</h2>
             <ul>
               <li>
                 <h3>Настоящий городок — №1 —</h3>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img src="img/real_town.jpg" width="800" height="256" alt="Город Седона">
+                <img src="img/real_town.jpg" width="800" height="256" alt="Вид на городскую застройку Седоны">
               </li>
               <li>
                 <h3>Там есть Мост дьявола — №2 —</h3>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
+                <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола - памятник, созданный природой из красных горных пород">
               </li>
               <li>
                 <h3>Небольшая площадь — №3 —</h3>
@@ -74,33 +76,63 @@
     <h2 class="visually-hidden">Бронирование отеля</h2>
         <b>Заинтересовались?</b>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
         <h3><a>Поиск гостиницы в Седоне</a></h3>
         <div class="hotel-search">
-          <p>Дата заезда:</p>
-          <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
-          <p>Дата выезда:</p>
-          <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
-          <p>Взрослые</p>
-          <img src="img/minus.svg" width="12" height="3" alt="Убавить">
-          <img src="img/plus.svg" width="11" height="11" alt="Прибавить">
-          <p>Дети</p>
-          <img src="img/minus.svg" width="12" height="3" alt="Убавить">
-          <img src="img/plus.svg" width="11" height="11" alt="Прибавить">
-          <a>Нвйти</a>
+          <label class="form-item">Дата заезда:
+           <input type="date" name="check-in-date">
+          </label>
+          <!-- <img src="img/calendar.svg" width="21" height="22" alt="Календарь"> -->
+          <label class="form-item">Дата выезда:
+            <input type="date" name="check-out-date">
+          </label>
+          <!-- <img src="img/calendar.svg" width="21" height="22" alt="Календарь"> -->
+          <label class="form-item">Взрослые:
+            <svg width="12" height="12">
+              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+            </svg>
+            <output name="adult">2</output>
+            <svg width="12" height="12">
+              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+            </svg>
+          </label>
+
+          <label class="form-item">Дети:
+            <svg width="12" height="12">
+              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+            </svg>
+            <output name="children">0</output>
+            <svg width="12" height="12">
+              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+            </svg>
+          </label>
+          <button class="button" type="submit">Найти</button>
         </div>
-        <img src="img/map.jpg" width="1200" height="593" alt="Cедона на карте">
+      </form>
+        <img src="img/map.jpg" width="1200" height="593" alt="Седона расположена на пересечении трасс 89А и 179">
   </section>
 </main>
 
 <footer class="main-footer">
   <p>#visitSEDONA</p>
     <ul>
-      <li><a class="social-button" href="#">Твитер
-      </a></li>
-      <li><a class="social-button" href="#">Фейсбук
-      </a></li>
-        <li><a class="social-button" href="#">Ютюб
-      </a></li>
+      <li>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Твитер</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Ютюб</span>
+          </a>
+        </li>
     </ul>
       <p>Website <a href="https://htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>

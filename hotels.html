@@ -19,9 +19,65 @@
       </nav>
     </header>
   <main>
-    <h1 class="visually-hidden">Поиск жилья</h1>
-    <!-- Здесь будет форма -->
-    <img src="img/filter_background.png" width="768" height="512" alt="Вид на Седону">
+    <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li class="filter-option">
+            <label class="facilities-item">
+              <input class="filter-input-checkbox" type="checkbox" name="swimming-pool" checked>
+               Бассейн
+            </label>
+          </li>
+          <li class="filter-option">
+            <label class="facilities-item">
+              <input class="filter-input-checkbox" type="checkbox" name="parking">
+               Паркинг
+            </label>
+          </li>
+          <li class="filter-option">
+            <label class="facilities-item">
+              <input class="filter-input-checkbox" type="checkbox" name="wi-fi">
+               wi-fi
+            </label>
+          </li>
+      </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li class="filter-option">
+            <label class="property-item">
+              <input class="filter-input-checkbox" type="checkbox" name="hotel" checked>
+               Гостиница
+              </label>
+          </li>
+          <li class="filter-option">
+            <label class="property-item">
+              <input class="filter-input-checkbox" type="checkbox" name="motel" checked>
+               Мотель
+            </label>
+          </li>
+          <li class="filter-option">
+            <label class="property-item">
+              <input class="filter-input-checkbox" type="checkbox" name="apartments" checked>
+               Апартаменты
+            </label>
+          </li>
+      </ul>
+      </fieldset>
+      <div class="price">
+        <label class="price-label">Стоимость в сутки (Р):
+          <input type="text" name="min-price" placeholder="От 0">
+        </label>
+        <label class="price-label">
+          <input type="text" name="max-price" placeholder="До 3000">
+        </label>
+      </div>
+      <button class="button" type="submit">Показать</button>
+    </form>
+    <img src="img/filter_background.jpg" width="768" height="512" alt="Вид на Седону">
 <h2>Найдено:</h2>
 <section class="sorting">
 <h3>Сортировка:</h3>
@@ -43,7 +99,7 @@
     <section class="hotels">
         <ul>
           <li>
-            <img src="img/amara_preview.jpg" width="135" height="90" alt="Фото отеля Амара">
+            <img src="img/amara_preview.jpg" width="135" height="90" alt="Вид на отель Амара Резорт">
               <h3>Amara Resort & Spa</h3>
               <table class="hotel-price">
                 <tr>
@@ -59,7 +115,7 @@
             </div>
           </li>
           <li>
-            <img src="img/desert_preview.jpg" width="135" height="90" alt="Фото отеля Дезерт">
+            <img src="img/desert_preview.jpg" width="135" height="90" alt="Вид на отель Дезерт Куэал Ин">
               <h3>Desert Quail Inn</h3>
               <table class="hotel-price">
                 <tr>
@@ -76,7 +132,7 @@
             </div>
           </li>
           <li>
-            <img src="img/diablo_preview.jpg" width="135" height="90" alt="Фото отеля Диабло">
+            <img src="img/diablo_preview.jpg" width="135" height="90" alt="Вид на виллы комплекса Поко Диабло">
 
               <h3>Villas at Poco Diablo</h3>
               <table class="hotel-price">
@@ -99,14 +155,23 @@
 </main>
 <footer class="main-footer">
   <p>#visitSEDONA</p>
-    <ul>
-      <li><a class="social-button" href="#">Твитер
-      </a></li>
-      <li><a class="social-button" href="#">Фейсбук
-      </a></li>
-        <li><a class="social-button" href="#">Ютюб
-      </a></li>
-    </ul>
+  <ul>
+    <li>
+      <a class="social-button" href="#">
+        <span class="visually-hidden">Твитер</span>
+      </a>
+    </li>
+    <li>
+      <a class="social-button" href="#">
+        <span class="visually-hidden">Фейсбук</span>
+      </a>
+    </li>
+      <li>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Ютюб</span>
+        </a>
+      </li>
+  </ul>
       <p>Website <a href="https://htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>
 </footer>
