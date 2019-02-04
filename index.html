@@ -87,27 +87,40 @@
             <input type="text" name="check-out-date">
           </label>
           <!-- <img src="img/calendar.svg" width="21" height="22" alt="Календарь"> -->
-          <label class="form-item">Взрослые:
-            <svg width="12" height="12">
-              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-            </svg>
-            <output name="adult">2</output>
-            <svg width="12" height="12">
-              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-              <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-            </svg>
-          </label>
-
-          <label class="form-item">Дети:
-            <svg width="12" height="12">
-              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-            </svg>
-            <output name="children">0</output>
-            <svg width="12" height="12">
-              <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-              <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
-            </svg>
-          </label>
+        <p>
+          <label for="adult" class="form-item">Взрослые:</label>
+            <button class="minus-button" type="button" name="button">
+             <span class="visually-hidden">Убавить количество</span>
+              <svg width="12" height="12">
+               <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              </svg>
+            </button>
+             <input type="text" id="adult" name="adult" value="2" placeholder="0">
+            <button class="plus-button" type="button" name="button">
+             <span class="visually-hidden">Добавить количество</span>
+              <svg width="12" height="12">
+               <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+               <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              </svg>
+            </button>
+        </p>
+        <p>
+          <label for="children" class="form-item">Дети:</label>
+            <button class="minus-button" type="button" name="button">
+             <span class="visually-hidden">Убавить количество</span>
+              <svg width="12" height="12">
+               <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              </svg>
+            </button>
+             <input class="children-input" type="text" id="children" name="children" value="0" placeholder="0">
+            <button class="plus-button" type="button" name="button">
+             <span class="visually-hidden">Добавить количество</span>
+              <svg width="12" height="12">
+               <line x1="0" y1="6" x2="12" y2="6" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+               <line x1="6" y1="0" x2="6" y2="12" stroke="rgba(0, 1, 1, 0.15)" stroke-width="3"/>
+              </svg>
+            </button>
+        </p>
           <button class="button" type="submit">Найти</button>
         </div>
       </form>
