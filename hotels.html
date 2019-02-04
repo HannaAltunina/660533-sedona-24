@@ -68,12 +68,13 @@
       </ul>
       </fieldset>
       <div class="price">
-        <label class="price-label">Стоимость в сутки (Р):
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <p class="visually-hidden">Минимальная цена</p>
           <input type="text" name="min-price" placeholder="От 0">
-        </label>
-        <label class="price-label">
+          <p class="visually-hidden">Максимальная цена</p>
           <input type="text" name="max-price" placeholder="До 3000">
-        </label>
+        </fieldset>
       </div>
       <button class="button" type="submit">Показать</button>
     </form>
