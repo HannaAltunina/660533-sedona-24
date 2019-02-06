@@ -1,8 +1,9 @@
+
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -16,14 +17,18 @@ a {
 }
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 26px;
   background-color: #ffffff;
   font-weight: bold;
 }
 
-.site-navigation a {
+.site-navigation {
   list-style: none;
+}
+
+.site-navigation a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -40,7 +45,7 @@ a {
 
 .intro {
   background-color: #81b3d2;
-  background-image: url("img/background-photo.jpg");
+  background-image: url("../img/background-photo.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -103,7 +108,7 @@ a {
   background-color: #ffffff;
 }
 
-.booking span {
+.booking b {
   font-size: 30px;
   line-height: 36px;
 }
@@ -144,9 +149,10 @@ a {
 }
 
 .form-item-input {
-  background-image: url("calendar.svg");
+  background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 21 22;
 }
 
 .quantity-button {
@@ -214,14 +220,201 @@ a {
   text-align: right;
 }
 
-.main-footer a:hover {
+.copyright a:hover {
   stroke: #81b3d2;
 }
 
-.main-footer a:active {
+.copyright a:active {
   stroke: #bdbbbc;
 }
 
-/*.visually-hidden {
-  display: none;
-}*/
+.inner-page {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.inner-page .site-navigation {
+  list-style: none;
+}
+
+form {
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 768 512;
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.search-form legend {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  text-align: left;
+  color: #ffffff;
+}
+
+.price legend,
+.price fieldset {
+  text-align: right;
+}
+
+ .site-navigation-current a {
+  color: #766357;
+}
+
+.search-form fieldset,
+.price fieldset {
+  border: none;
+}
+
+.filter-input-checkbox:disabled {
+  color: #6a6a6a
+}
+
+.price input {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+input::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+
+.search-form button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.search-form button:hover {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+}
+
+.inner-page h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+}
+
+.inner-page h3 {
+  font-size: 12px;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-type a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.sorting-type a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-type a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.up-down-sorting a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.up-down-sorting a:hover {
+  color: #000000;
+}
+
+.up-down-sorting a:active {
+  color: #81b3d2;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotels-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-align: left;
+}
+
+.hotels-list h3:hover {
+  color: #81b3d2;
+}
+
+.hotels-list h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-price td {
+  font-size: 14px;
+  text-align: left;
+}
+
+.button-info,
+.button-booking {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+.button-info {
+  background-color: #81b3d2;
+}
+
+.button-info:hover {
+  background-color: #669ec0;
+}
+
+.button-info:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-booking {
+  background-color: #766357;
+}
+
+.button-booking:hover {
+  background-color: #604e43;
+}
+.button-booking:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-experience p {
+  text-align: center;
+  color: #666666;
+  background-color: #f2f2f2;
+  text-align: right;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
