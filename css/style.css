@@ -43,6 +43,11 @@ a {
   color: #766357;
 }
 
+.site-navigation-current a {
+ color: #766357;
+}
+
+
 .intro {
   background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
@@ -148,12 +153,16 @@ a {
   border: none;
 }
 
-.form-item-input {
+
+/* stroke="#cacaca" fill="#ffffff"*/
+
+
+/*.form-item-input {
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 21 22;
-}
+} */
 
 .quantity-button {
   background-color: #f2f2f2;
@@ -241,7 +250,7 @@ a {
 form {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 768 512;
+  background-size: 768px 512px;
   color: #ffffff;
   background-color: #669ec0;
 }
@@ -261,10 +270,6 @@ form {
 .price legend,
 .price fieldset {
   text-align: right;
-}
-
- .site-navigation-current a {
-  color: #766357;
 }
 
 .search-form fieldset,
