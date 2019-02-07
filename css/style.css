@@ -247,7 +247,7 @@ a {
   list-style: none;
 }
 
-form {
+.inner-page form {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 768px 512px;
