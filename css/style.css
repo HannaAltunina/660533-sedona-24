@@ -1,4 +1,8 @@
 
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
 body {
   margin: 0;
   padding: 0;
@@ -42,6 +46,7 @@ body {
   align-items: center;
   list-style: none;
   margin: 0;
+  padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -134,7 +139,6 @@ body {
 }
 
 .features p {
-  width: 550px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -148,9 +152,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
-.features-list > li {
+.features-list li {
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -183,11 +189,6 @@ body {
 
 .features-list li:first-child {
   order: 0;
-  margin-top: 15px;
-}
-.features-list li:last-child {
-  order: 1;
-  margin-top: 15px;
 }
 
 .features-list li:nth-child(2) {
@@ -210,10 +211,23 @@ body {
   margin-top: 15px;
 }
 
+.feature-item {
+  width: 33.33%;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-image {
+  width: 66.67%;
+  margin: 0;
+  padding: 0;
+}
+
 .entertainment {
+  order: 1;
   display: flex;
+  flex-direction: column;
   flex-grow: 0;
-  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -221,14 +235,13 @@ body {
   color: #000000;
 }
 
-.entertainment > li {
-  width: 400px;
+.entertainment li {
+  width: 33.33%;
   min-height: 200px;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
 }
-
-
 
 .booking {
   display: flex;
