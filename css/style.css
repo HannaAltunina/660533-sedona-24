@@ -90,7 +90,7 @@ body {
   color: #766357;
 }
 
-.site-navigation-current a {
+.inner-page .site-navigation-current a {
  color: #766357;
 }
 
@@ -286,11 +286,15 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .booking p {
   font-weight: normal;
   line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .booking-form {
@@ -298,7 +302,6 @@ body {
   min-height: 481px;
   display: flex;
   flex-direction: column;
-
   margin: 0 auto;
   align-items: center;
   font-size: 14px;
@@ -350,18 +353,6 @@ body {
   margin: 0;
 }
 
-
-
-/* stroke="#cacaca" fill="#ffffff"*/
-
-
-/*.form-item-input {
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 21 22;
-} */
-
 .quantity-button {
   background-color: #f2f2f2;
   border: none;
@@ -404,21 +395,26 @@ body {
 
 .main-footer {
   display: flex;
-  width: 1200px;
-  height: 120px;
-  justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.main-footer p:first-of-type {
+.main-footer > p:first-of-type {
+  padding: 0;
+  margin: 0;
+  width: 33.33%;
   font-size: 21px;
   font-weight: bold;
-  text-align: left;
+  padding: 50px 120px;
+  vertical-align: middle;
 }
 
 .main-footer ul {
+  padding: 0;
+  margin: 0;
+  width: 33.33%;
   list-style: none;
-  text-align: center;
+  padding: 50px 120px;
+  vertical-align: middle;
 }
 
 .social-button {
@@ -435,8 +431,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer p:last-of-type {
-  text-align: right;
+.copyright > p {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.copyright {
+  width: 33.33%;
+  display: block;
+  padding: 50px 120px;
 }
 
 .copyright a:hover {
@@ -455,6 +460,7 @@ body {
 
 .inner-page .site-navigation {
   list-style: none;
+  
 }
 
 .search-form {
