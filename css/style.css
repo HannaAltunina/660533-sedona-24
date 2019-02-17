@@ -406,14 +406,6 @@ img {
   text-align: left;
 }
 
-.form-item-input placeholder{
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 .persons-input,
 .quantity-button {
   width: 38px;
@@ -432,7 +424,6 @@ img {
   background-color: #f2f2f2;
   border: none;
   padding: 0;
-  margin-left: 15px;
 }
 
 .button {
@@ -472,6 +463,7 @@ img {
 
 .main-footer {
   display: flex;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -481,22 +473,26 @@ img {
   width: 33.33%;
   font-size: 21px;
   font-weight: bold;
-  padding: 50px 120px;
-  vertical-align: middle;
+  padding: 50px 100px;
 }
 
 .main-footer ul {
   padding: 0;
-  margin: 0;
-  width: 33.33%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
   list-style: none;
-  padding: 50px 120px;
-  vertical-align: middle;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #81b3d2;
-  color: #ffffff;
+  width: 46px;
+  height: 48px;
 }
 
 .social-button:hover {
@@ -504,28 +500,36 @@ img {
 }
 
 .social-button:active {
-  background-color: #81b3d2;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
-.copyright > p {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  vertical-align: middle;
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .copyright {
   width: 33.33%;
   display: block;
-  padding: 50px 120px;
+  box-sizing: content-box;
+  padding: 0;
 }
 
-.copyright a:hover {
+.copyright > p {
+  margin: 0;
+  padding: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.copyright a:hover path {
+  fill: #81b3d2;
   stroke: #81b3d2;
 }
 
-.copyright a:active {
+.copyright a:active path {
+  fill: #bdbbbc;
   stroke: #bdbbbc;
 }
 
@@ -542,21 +546,22 @@ img {
 
 .search-form {
   display: flex;
-  width: 1200px;
-  height: 217px;
+  width: 100%;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #ffffff;
   background-color: #669ec0;
-  padding: 30px 70px;
-}
-
-.seach-form ul {
-  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.filter-options {
+  width: 140px;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 70px;
 }
 
 .filter-option {
@@ -568,14 +573,9 @@ img {
 .search-form legend {
   font-size: 16px;
   font-weight: bold;
-  line-height: 1.31;
+  line-height: 21px;
   text-align: left;
   color: #ffffff;
-}
-
-.price legend,
-.price fieldset {
-  text-align: right;
 }
 
 .search-form fieldset,
@@ -590,37 +590,132 @@ img {
 .price {
   padding: 0;
   margin: 0;
-}
-
-.price input {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-}
-
-input::placeholder {
+  width: 330px;
   color: #ffffff;
-  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-right: 70px;
+  margin-bottom: 30px;
 }
 
-.search-form button {
-  width: 133px;
-  height: 32px;
-  background-color: transparent;
+.price-title {
+  margin-bottom: 9px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
   border: 2px solid #ffffff;
-  color: #ffffff;
-  text-align: center;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
   font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
 }
 
-.search-form button:hover {
-  background-color: #ffffff;
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+  color: #ffffff;
+}
+
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: transparent;
   border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: -9px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+
+.price button {
+  width: 206px;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.price button:hover {
+  background-color: #ffffff;
   color: #000000;
-  text-align: center;
 }
 
 .results {
+  width: 100%;
+  display: flex;
   padding: 30px 70px;
+  align-items: center;
 }
 
 .results h2 {
@@ -628,8 +723,7 @@ input::placeholder {
   font-weight: bold;
   line-height: 1.24;
   padding: 0;
-  margin: 0;
-  margin-right: 40px;
+  margin-right: 45px;
 }
 
 .inner-page h3 {
@@ -637,18 +731,26 @@ input::placeholder {
   margin: 0;
   font-size: 12px;
   margin-right: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sorting {
+  display: flex;
 }
 
 .sorting-type {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 400px;
 }
 
 .sorting-type li {
   display: inline;
   padding: 0;
   margin: 0;
+  padding-right: 33px;
 }
 
 .sorting-type a {
@@ -668,25 +770,29 @@ input::placeholder {
 }
 
 .up-down-sorting {
+  display: flex;
+  width: 24px;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 .up-down-sorting li {
-  dispalay: inline;
+  display: inline;
 }
 
-.up-down-sorting a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.3);
+.up-down-sorting a path {
+  fill: #cacaca;
 }
 
-.up-down-sorting a:hover {
+.up-down-sorting a:hover path {
   fill: #000000;
 }
 
-.up-down-sorting a:active {
+.up-down-sorting a:active path {
   fill: #81b3d2;
 }
 
