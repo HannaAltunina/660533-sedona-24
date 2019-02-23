@@ -877,12 +877,12 @@ img {
 
 .up-down-sorting {
   display: flex;
-  width: 24px;
+  width: 30px;
   justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  margin-left: 360px;
   margin-right: 70px;
 }
 
@@ -904,45 +904,73 @@ img {
 
 .hotels-list {
   width: 1200px;
-  display: flex;
-  flex-direction: column;
   list-style: none;
-  padding: 30px 70px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hotel-card {
-  min-height: 151px;
+  display: flex;
   border-top: 1px solid #f2f2f2;
   margin: 0 0;
 }
 
-.hotels-list h3 {
-  margin: -1px;
+.hotel-card img {
+  width: 135px;
+  height: 90px;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 72px;
+}
+
+.hotel-card h3 {
+  margin-left: 2px;
+  margin-top: 26px;
+  margin-bottom: 6px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  text-align: left;
 }
 
-.hotels-list h3:hover {
+.hotel-card h3:hover {
   color: #81b3d2;
 }
 
-.hotels-list h3:active {
+.hotel-card h3:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.hotel-price {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .hotel-price td {
+  width: 125px;
+
   font-size: 14px;
+  padding: 0;
+  margin: 0;
   text-align: left;
 }
 
 .button-info,
 .button-booking {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 3px 17px;
+  margin-left: 3px;
+  margin-right: 6px;
+
   font-size: 14px;
   font-weight: bold;
   text-align: left;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .button-info {
@@ -970,7 +998,39 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.user-experience {
+  margin-left: 480px;
+  margin-right: 70px;
+}
+
+.stars {
+  display: inline-block;
+  width: 105px;
+  height: 17px;
+  background: url("../img/star.svg") repeat-x;
+  background-position: 0 0;
+  background-color: transparent;
+  margin-top: 28px;
+}
+
+.two-stars {
+  width: 37px;
+  margin-left: 81px;
+}
+
+.three-stars {
+  width: 55px;
+  margin-left: 65px;
+}
+
+.four-stars {
+  width: 75px;
+  margin-left: 50px;
+}
+
 .user-experience p {
+  padding: 5px 15px;
+
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
