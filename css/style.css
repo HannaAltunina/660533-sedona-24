@@ -362,7 +362,6 @@ img {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  text-align: center;
   background-color: #ffffff;
 }
 
@@ -381,6 +380,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .booking-form {
@@ -390,7 +390,12 @@ img {
   padding: 0;
   align-items: center;
   font-size: 14px;
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.booking-form h3 {
+  background-color: #766357;
+  padding: 30px 138px;
+  margin: 0;
 }
 
 .booking-form a {
@@ -399,9 +404,7 @@ img {
   font-weight: bold;
   line-height: 1.24;
   text-align: center;
-  background-color: #766357;
   width: 100%;
-  padding: 30px 138px;
 }
 
 .booking-form a:hover {
@@ -423,6 +426,8 @@ img {
   margin: 0;
 
   background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
 }
 
 .hotel-search p {
@@ -482,7 +487,6 @@ img {
   padding: 0;
   margin: 0;
   padding: 8px;
-  margin-left: -4px;
 
   border: none;
   background-color: #f2f2f2;
@@ -500,7 +504,7 @@ img {
 
 
 .calendar svg {
-  color: #a9a9a9;
+  fill: #a9a9a9;
 }
 
 .persons-input,
@@ -524,11 +528,14 @@ img {
 }
 
 .button {
-  width: 458px;
-  height: 58px;
+  width: 100%;
   margin-top: 27px;
   background-color: #81b3d2;
   border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   text-align: center;
   vertical-align: middle;
@@ -559,7 +566,6 @@ img {
 }
 
 .booking img {
-  margin-top: 86px;
   margin-bottom: -120px;
 }
 
@@ -742,7 +748,6 @@ img {
 
 .price-controls {
   position: relative;
-  height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -764,7 +769,7 @@ img {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 36px;
   vertical-align: center;
   padding: 0;
   margin: 0;
@@ -781,6 +786,8 @@ img {
 .price-controls input {
   width: 50px;
   margin: 0;
+  line-height: inherit;
+
   color: inherit;
   font: inherit;
   background: transparent;
@@ -834,7 +841,6 @@ img {
 .price button {
   display: block;
   width: 133px;
-  height: 32px;
   margin: 0 auto;
 
   font-size: 14px;
