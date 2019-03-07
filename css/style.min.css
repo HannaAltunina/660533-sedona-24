@@ -4,6 +4,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -97,28 +98,29 @@ img {
   list-style: none;
 }
 
-.site-navigation li {
+.site-navigation-item {
   width: 25%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   text-align: left;
 }
 
-.site-navigation li:nth-of-type(3),
-.site-navigation li:last-of-type {
+.site-navigation-item:nth-child(4n+3),
+.site-navigation-item:nth-child(4n+4) {
   text-align: right;
 }
 
-.site-navigation li:last-of-type {
+
+.site-navigation-item:nth-child(4n+4) {
   padding-right: 72px;
 }
 
-.site-navigation li:first-of-type {
+.site-navigation-item:nth-child(4n+1) {
   padding-left: 72px;
 }
 
-.site-navigation a {
+.site-navigation-item a {
   text-decoration: none;
 
   color: #000000;
@@ -128,15 +130,15 @@ img {
   line-height: 26px;
 }
 
-.site-navigation a:hover {
+.site-navigation-item a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation-item a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
-.site-navigation a:active {
-  color: #766357;
+.site-navigation-item a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation-current a {
@@ -185,9 +187,9 @@ img {
 
 .promo p {
   width: 450px;
-  margin-top: 60px;
+  margin-top: 59px;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-left: auto;
 
   text-align: center;
@@ -404,6 +406,7 @@ img {
       -ms-flex-order: 1;
           order: 1;
 
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 65px;
@@ -424,6 +427,8 @@ img {
 }
 
 .entertainment h3 {
+  position: relative;
+
   margin: 0;
   padding: 0;
 }
@@ -436,15 +441,17 @@ img {
 }
 
 .entertainment-item:first-of-type h3::before {
-  display: block;
+  position: absolute;
 
+  width: 75px;
   height: 72px;
-  margin-bottom: 27px;
-  padding: top;
 
-  content: url("../img/icon-1.svg");
+  content: "";
 
-  weight: 75px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .entertainment-item:nth-of-type(2) {
@@ -509,8 +516,10 @@ img {
 
 .booking b {
   margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 390px;
+  margin-left: 390px;
+
+  text-align: center;
 
   font-size: 30px;
   line-height: 36px;
@@ -546,12 +555,12 @@ img {
 
 .booking-form h3 {
   margin: 0;
-margin-top: 30px;
+  margin-top: 30px;
   padding: 0;
-padding-top: 30px;
-padding-right: 138px;
-padding-bottom: 30px;
-padding-left: 138px;
+  padding-top: 30px;
+  padding-right: 138px;
+  padding-bottom: 30px;
+  padding-left: 138px;
 
   text-align: center;
 
@@ -815,11 +824,8 @@ padding-left: 138px;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 
-  width: 150px;
+  width: 160px;
   margin: 0 auto;
   padding: 0;
 
@@ -839,6 +845,7 @@ padding-left: 138px;
 
   width: 46px;
   height: 48px;
+  margin: 3px;
 
   background-color: #81b3d2;
 }
@@ -921,7 +928,7 @@ padding-left: 138px;
   width: 100%;
   margin: 0;
   padding: 0;
-  padding: 30px 72px 0 72px;
+  padding: 28px 72px 5px 72px;
 
   color: #ffffff;
   background-color: #669ec0;
@@ -953,16 +960,18 @@ padding-left: 138px;
 }
 
 .filter-options {
-  margin-right: 150px;
+  margin-right: 144px;
 
   list-style: none;
 }
 
 .filter-option {
+  position: relative;
+
   display: block;
 
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   padding: 0;
 
   list-style: none;
@@ -980,30 +989,32 @@ padding-left: 138px;
 
 .facilities-item::before {
   position: absolute;
+  top: -2px;
+  left: -40px;
 
   width: 27px;
   height: 23px;
-  margin: 0;
-  margin-left: -42px;
 
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  content:"";
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + .facilities-item::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
 }
 
 .filter-input-checkbox:disabled + .facilities-item::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='#6a6a6a' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='rgb(106, 106, 106)' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
 }
 
 .filter-input-checkbox:checked:disabled + .facilities-item::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='#6a6a6a' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='#6a6a6a' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='rgb(106, 106, 106)' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='rgb(106, 106, 106)' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
 }
 
-
 .price {
-  width: 330px;
+  width: 320px;
   margin: 0;
   margin-right: 0;
   margin-left: auto;
@@ -1013,7 +1024,9 @@ padding-left: 138px;
 }
 
 .price-title {
+  margin: 0;
   margin-bottom: 9px;
+  padding: 0;
 }
 
 .price-controls {
@@ -1059,7 +1072,7 @@ padding-left: 138px;
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 160px;
+  width: 150px;
   padding-left: 60px;
 
   color: #ffffff;
@@ -1220,7 +1233,7 @@ padding-left: 138px;
   text-decoration: none;
 
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 
   font-size: 12px;
   line-height: 18px;
@@ -1370,6 +1383,7 @@ padding-left: 138px;
   padding: 3px 17px;
 
   text-align: left;
+  vertical-align: middle;
   text-decoration: none;
 
   color: #ffffff;
@@ -1415,6 +1429,8 @@ padding-left: 138px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
+
+  vertical-align: middle;
 
   background: url("../img/star.svg") repeat-x;
   background-color: transparent;
