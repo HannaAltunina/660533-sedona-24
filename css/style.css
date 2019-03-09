@@ -92,8 +92,8 @@ img {
 
 .site-navigation-item {
   width: 25%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 17px;
+  padding-left: 12px;
 
   text-align: left;
 }
@@ -151,14 +151,14 @@ img {
   align-items:center;
 
   width: 100%;
-  height: 510px;
+  height: 509px;
   margin: 0;
   padding: 0;
 
   background-color: #81b3d2;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center 454px, center -90px;
+  background-position: center 452px, center -85px;
   background-clip: content-box;
 }
 
@@ -188,7 +188,7 @@ img {
 }
 
 .features {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -248,7 +248,7 @@ img {
   width: 33.33%;
   margin: 0;
   padding: 0;
-  padding: 45px 50px 60px;
+  padding: 48px 50px 60px;
 
   text-align: center;
 
@@ -291,7 +291,7 @@ img {
 .features-list > li:nth-child(5) {
   flex-grow: 1;
 
-  padding-top: 48px;
+  padding-top: 50px;
   padding-bottom: 45px;
 
   text-align: center;
@@ -303,8 +303,8 @@ img {
 
 .features-list > li:nth-child(3) {
   width: 33.33%;
-  padding-right: 62px;
-  padding-left: 62px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .features-list > li:nth-child(4) {
@@ -365,7 +365,7 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 68px;
 
   list-style: none;
 
@@ -386,7 +386,8 @@ img {
 
   margin: 0;
   padding: 0;
-  margin-top: 95px;
+  margin-top: 97px;
+  margin-bottom: 23px;
 }
 
 .entertainment-item:first-of-type {
@@ -398,7 +399,7 @@ img {
 
 .entertainment-item:first-of-type h3::before {
   position: absolute;
-  top: -99px;
+  top: -100px;
   left: 116px;
   content: "";
   width: 75px;
@@ -433,8 +434,8 @@ img {
 }
 
 .entertainment-item:last-of-type {
-  padding-right: 50px;
-  padding-left: 60px;
+  padding-right: 55px;
+  padding-left: 55px;
 
   text-align: center;
 }
@@ -443,8 +444,8 @@ img {
   content: "";
 
   position: absolute;
-  top: -103px;
-  left: 110px;
+  top: -104px;
+  left: 113px;
 
   width: 64px;
   height: 76px;
@@ -474,6 +475,7 @@ img {
   margin-top: 0;
   margin-right: 390px;
   margin-left: 390px;
+  margin-bottom: 10px;
 
   text-align: center;
 
@@ -497,7 +499,7 @@ img {
 
   align-items: center;
 
-  width: 570px;
+  width: 568px;
   margin: 0 auto;
   padding: 0;
 
@@ -507,11 +509,11 @@ img {
 
 .booking-form h3 {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 31px;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-right: 138px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   padding-left: 138px;
 
   text-align: center;
@@ -546,7 +548,7 @@ img {
 
   width: 100%;
   margin: 0;
-  padding: 54px;
+  padding: 55px;
 
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -555,7 +557,7 @@ img {
 
 .hotel-search p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 }
 
@@ -570,9 +572,11 @@ img {
 
 
 .form-item {
-  width: 110px;
+  width: 113px;
   margin: 0;
   padding: 0;
+
+  padding-left: 1px;
 
   font-weight: bold;
 }
@@ -590,7 +594,7 @@ img {
   height: 38px;
   margin: 0;
   padding: 0;
-  padding: 14px 0 12px 12px;
+  padding: 13px 0 12px 10px;
 
   text-align: left;
   text-transform: uppercase;
@@ -633,6 +637,7 @@ img {
   width: 50%;
   margin: 0;
   padding: 0;
+  margin-top: 1px;
 }
 
 .adult-label,
@@ -641,8 +646,8 @@ img {
 }
 
 .children-label {
-  margin-left: 10px;
-  padding-left: 40px;
+  margin-left: 2px;
+  padding-left: 48px;
 }
 
 .persons-input,
@@ -668,6 +673,8 @@ img {
 
 .quantity-button {
   padding: 0;
+  padding-top: 5px;
+  padding-left: 2px;
 
   border: none;
   background-color: #f2f2f2;
@@ -694,12 +701,12 @@ img {
 
 .button {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 54px;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-right: 15px;
   padding-bottom: 16px;
-  padding-left: 15px;
+  padding-left: 14px;
 
   text-align: center;
   vertical-align: middle;
@@ -732,8 +739,8 @@ img {
   display: flex;
   align-items: center;
 
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 33px;
+  padding-bottom: 33px;
 
   opacity: 0.9;
   background-color: rgb(255, 255, 255);
