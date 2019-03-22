@@ -952,8 +952,8 @@ iframe
 
 .button:focus
 {
-    -webkit-box-shadow: 3px 3px 12px 5px rgba(90, 189, 187, .15);
-            box-shadow: 3px 3px 12px 5px rgba(90, 189, 187, .15);
+    -webkit-box-shadow: 3px 3px 12px 5px rgba(90, 189, 187, .4);
+            box-shadow: 3px 3px 12px 5px rgba(90, 189, 187, .4);
 }
 
 .button:hover
