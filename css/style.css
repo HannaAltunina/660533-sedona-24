@@ -708,6 +708,11 @@ img
     background-image: url(../img/map.jpg);
 }
 
+iframe
+{
+    frameborder: 0;
+}
+
 .hotel-search
 {
     position: absolute;
